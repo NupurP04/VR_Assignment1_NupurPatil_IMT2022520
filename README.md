@@ -32,9 +32,9 @@ git clone https://github.com/NupurP04/VR_Assignment1_NupurPatil_IMT2022520.git
 cd VR_Assignment1_NupurPatil_IMT2022520
 ```
 
-2. Inside the **input_images** directory, `coins.jpg` is the input image used in the script. Copy the path accordingly.  
+2. Navigate to the **coin_detection_and_segmentation** folder, inside the **input_images** directory, `coins.jpg` is the input image used in the script. 
 
-3. Navigate to the **coin_detection_and_segmentation** folder and execute the Jupyter Notebook **VR_ass1_coin.ipynb**.  
+3. Execute the Jupyter Notebook **VR_ass1_coin.ipynb**.  
 
 ---
 
@@ -61,11 +61,10 @@ cd VR_Assignment1_NupurPatil_IMT2022520
 ---
 
 ### **6. Results & Observations**  
-- The algorithm successfully detects coins in the image and segments them individually.  
-- **Intermediate results** (grayscale, blurred, thresholded, detected, and segmented images) are displayed.  
+- The algorithm successfully detects coins in the image and segments them individually.   
 - The total number of detected coins is printed.  
 
-#### **Sample Outputs**  
+#### **Some of the Outputs**  
 | **Original Image** | **Thresholded Image** | **Detected Coins** |  
 |-----------------|-----------------|-----------------|  
 | ![Original](coin_detection_and_segmentation/output_images/original_image.png) | ![Thresholded](coin_detection_and_segmentation/output_images/thresholded_image.png) | ![Detected](coin_detection_and_segmentation/output_images/detected_coin_border_image.png) |  
@@ -101,9 +100,9 @@ git clone https://github.com/NupurP04/VR_Assignment1_NupurPatil_IMT2022520.git
 cd VR_Assignment1_NupurPatil_IMT2022520
 ```
 
-2. Inside the **input_images** directory, store the images (`p1.jpeg`, `p2.jpeg`, `p3.jpeg`) that need to be stitched.  
+2. Navigate to the **panorama_stitching** folder, inside the **input_images** directory, store the images (`p1.jpeg`, `p2.jpeg`, `p3.jpeg`) that need to be stitched.  
 
-3. Navigate to the **panorama_stitching** folder and execute the Jupyter Notebook **VR_ass1_panorama.ipynb**.  
+3. Execute the Jupyter Notebook **VR_ass1_panorama.ipynb**.  
 
 ---
 
@@ -130,7 +129,7 @@ cd VR_Assignment1_NupurPatil_IMT2022520
 - The algorithm successfully stitches images together into a seamless panorama.  
 - Feature detection and matching work effectively with **SIFT + FLANN + Homography**.  
 
-#### **Sample Outputs**  
+#### **Smaple Outputs**  
 | **Image 1** | **Image 2** | **Image 3** | **Stitched Panorama** |  
 |------------|------------|------------|----------------|  
 | ![Img1](panaroma_stitching/output_images/keypoints_p1.png) | ![Img2](panaroma_stitching/output_images/keypoints_p2.png) | ![Img3](panaroma_stitching/output_images/keypoints_p3.png) | ![Panorama](panaroma_stitching/output_images/panaroma.png) |  
