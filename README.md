@@ -63,7 +63,7 @@ cd VR_Assignment1_NupurPatil_IMT2022520
 - **Intermediate results** (grayscale, blurred, thresholded, detected, and segmented images) are displayed.  
 - The total number of detected coins is printed.  
 
-**Some of the Outputs obtained **  
+Some of the Outputs obtained  
 | **Original Image** | **Thresholded Image** | **Detected Coins** |  
 |-----------------|-----------------|-----------------|  
 | ![Original](coin_detection_and_segmentation/output_images/original_image.png) | ![Thresholded](coin_detection_and_segmentation/output_images/thresholded_image.png) | ![Detected](coin_detection_and_segmentation/output_images/detected_coin_border_image.png) |  
