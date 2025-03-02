@@ -32,7 +32,7 @@ git clone https://github.com/NupurP04/VR_Assignment1_NupurPatil_IMT2022520.git
 cd VR_Assignment1_NupurPatil_IMT2022520
 ```
 
-2. Navigate to the **coin_detection_and_segmentation** folder, inside the **input_images** directory, `coins.jpg` is the input image used in the script. 
+2. Navigate to the **coin_detection_and_segmentation** folder. Inside the **input_images** directory, `coins.jpg` is the input image used in the script.  
 
 3. Execute the Jupyter Notebook **VR_ass1_coin.ipynb**.  
 
@@ -61,13 +61,36 @@ cd VR_Assignment1_NupurPatil_IMT2022520
 ---
 
 ### **6. Results & Observations**  
-- The algorithm successfully detects coins in the image and segments them individually.   
+- The algorithm successfully detects coins in the image and segments them individually.  
 - The total number of detected coins is printed.  
 
 #### **Some of the Outputs**  
 | **Original Image** | **Thresholded Image** | **Detected Coins** |  
 |-----------------|-----------------|-----------------|  
 | ![Original](coin_detection_and_segmentation/output_images/original_image.png) | ![Thresholded](coin_detection_and_segmentation/output_images/thresholded_image.png) | ![Detected](coin_detection_and_segmentation/output_images/detected_coin_border_image.png) |  
+
+---
+
+### **7. What Was Tried, What Worked, and What Didn’t**  
+
+#### **What I Tried:**  
+1. **Hough Circle Transform** for circle detection.  
+2. **Canny Edge Detection + Contour Approximation**.  
+3. **Adaptive Gaussian Thresholding + Contour Filtering**.  
+
+#### **What Worked:**  
+**Adaptive Gaussian Thresholding + Contour Filtering** provided the most accurate and robust coin detection.  
+**Filtering based on circularity and area constraints** helped eliminate false detections.  
+**Masking technique for segmentation** effectively removed the background.  
+
+#### **What Didn’t Work:**  
+**Hough Circle Transform** detected many false positives and struggled with overlapping coins.  
+**Canny Edge Detection + Contours** produced noisy results, making segmentation harder.  
+
+#### **Final Approach:**  
+- **Adaptive Gaussian Thresholding** for better contrast.  
+- **Contour detection & filtering based on circularity** for accurate coin selection.  
+- **Segmentation using masking** to isolate individual coins.  
 
 ---
 
@@ -100,7 +123,7 @@ git clone https://github.com/NupurP04/VR_Assignment1_NupurPatil_IMT2022520.git
 cd VR_Assignment1_NupurPatil_IMT2022520
 ```
 
-2. Navigate to the **panorama_stitching** folder, inside the **input_images** directory, store the images (`p1.jpeg`, `p2.jpeg`, `p3.jpeg`) that need to be stitched.  
+2. Navigate to the **panorama_stitching** folder. Inside the **input_images** directory, store the images (`p1.jpeg`, `p2.jpeg`, `p3.jpeg`) that need to be stitched.  
 
 3. Execute the Jupyter Notebook **VR_ass1_panorama.ipynb**.  
 
@@ -129,54 +152,32 @@ cd VR_Assignment1_NupurPatil_IMT2022520
 - The algorithm successfully stitches images together into a seamless panorama.  
 - Feature detection and matching work effectively with **SIFT + FLANN + Homography**.  
 
-#### **Smaple Outputs**  
+#### **Sample Outputs**  
 | **Image 1** | **Image 2** | **Image 3** | **Stitched Panorama** |  
 |------------|------------|------------|----------------|  
-| ![Img1](panaroma_stitching/output_images/keypoints_p1.png) | ![Img2](panaroma_stitching/output_images/keypoints_p2.png) | ![Img3](panaroma_stitching/output_images/keypoints_p3.png) | ![Panorama](panaroma_stitching/output_images/panaroma.png) |  
+| ![Img1](panorama_stitching/output_images/keypoints_p1.png) | ![Img2](panorama_stitching/output_images/keypoints_p2.png) | ![Img3](panorama_stitching/output_images/keypoints_p3.png) | ![Panorama](panorama_stitching/output_images/panorama.png) |  
 
 ---
 
-## **Final Notes**  
-- The **coin detection model** accurately identifies and segments coins from images.  
-- The **panorama stitching model** effectively aligns images and produces high-quality stitched results.  
-- **All visual outputs are saved in their respective `output_images` folders.**  
+### **7. What Was Tried, What Worked, and What Didn’t**  
+
+#### **What I Tried:**  
+1. **ORB (Oriented FAST and Rotated BRIEF) instead of SIFT.**  
+2. **Brute Force Matcher vs. FLANN-based Matcher.**  
+3. **Direct stitching without homography transformation.**  
+
+#### **What Worked:**  
+**SIFT + FLANN Matcher + RANSAC Homography** produced the best alignment.  
+**Using grayscale images for feature detection** improved accuracy.  
+**Cropping after warping** removed black regions effectively.  
+
+#### **What Didn’t Work:**  
+**ORB + Brute Force Matcher** produced weak feature matches.  
+**Skipping Homography transformation** caused misaligned images.  
+
+#### **Final Approach:**  
+- **SIFT for feature extraction.**  
+- **FLANN-based Matcher for better accuracy.**  
+- **Homography transformation with RANSAC for precise alignment.**  
 
 ---
-
-### **7. Repository Structure**  
-```
-VR_Assignment1_NupurPatil_IMT2022520/
-│── coin_detection_and_segmentation/
-│   ├── VR_ass1_coin.ipynb
-│   ├── input_images/
-│   │   ├── coins.jpg
-│   ├── output_images/
-│   │   ├── blurred_image.png
-│   │   ├── detected_coin_border_image.png
-│   │   ├── grayscale_image.png
-│   │   ├── original_image.png
-│   │   ├── thresholded_image.png
-│   │   ├── segmented_coin1.png
-│   │   ├── segmented_coin2.png
-│   │   ├── segmented_coin3.png
-│   │   ├── segmented_coin4.png
-│   │   ├── segmented_coin5.png
-│   │   ├── segmented_coin6.png
-│   │   ├── segmented_coin7.png
-│   │   ├── thresholded_image.png
-│── panorama_stitching/
-│   ├── VR_ass1_panorama.ipynb
-│   ├── input_images/
-│   │   ├── p1.jpeg
-│   │   ├── p2.jpeg
-│   │   ├── p3.jpeg
-│   ├── output_images/
-│   │   ├── keypoints_p1.png
-│   │   ├── keypoints_p2.png
-│   │   ├── keypoints_p3.png
-│   │   ├── panorama.png
-│── README.md
-```
-
----
-
