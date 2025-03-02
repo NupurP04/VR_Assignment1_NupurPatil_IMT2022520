@@ -1,5 +1,5 @@
 
-# **VR_Assignment1_[YourName]_[YourRollNo]**  
+# **VR_Assignment1_NupurPatil_IMT2022520**  
 ## **Coin Detection and Segmentation**  
 
 ### **1. Overview**  
@@ -26,8 +26,8 @@ pip install opencv-python numpy matplotlib
 ### **4. How to Run**  
 1️⃣ Clone the repository:  
 ```bash
-git clone https://github.com/yourgithubusername/VR_Assignment1_[YourName]_[YourRollNo].git  
-cd VR_Assignment1_[YourName]_[YourRollNo]
+git clone https://github.com/NupurP04/VR_Assignment1_NupurPatil_IMT2022520.git  
+cd VR_Assignment1_NupurPatil_IMT2022520
 ```
 
 2️⃣ Place the image file inside the repository folder.  
