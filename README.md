@@ -24,18 +24,15 @@ pip install opencv-python numpy matplotlib
 ---
 
 ### **4. How to Run**  
-1️⃣ Clone the repository:  
+1. Clone the repository:  
 ```bash
 git clone https://github.com/NupurP04/VR_Assignment1_NupurPatil_IMT2022520.git  
 cd VR_Assignment1_NupurPatil_IMT2022520
 ```
 
-2️⃣ Place the image file inside the repository folder.  
+2. Place the image file inside the repository folder.  
 
-3️⃣ Run the script:  
-```bash
-python coin_detection.py
-```
+3️. Go to the coin_detection_and_segmentation folder - execute the cells in VR_ass1_coin.ipynb. 
 
 ---
 
