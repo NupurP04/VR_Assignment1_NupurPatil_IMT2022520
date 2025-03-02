@@ -37,7 +37,7 @@ cd VR_Assignment1_NupurPatil_IMT2022520
 ---
 
 ### **5. Methodology**  
-#### ** Step 1: Image Preprocessing**  
+####  Step 1: Image Preprocessing  
 - Convert the image to grayscale.  
 - Apply **Gaussian Blur** to remove noise.  
 - Display intermediate outputs.  
