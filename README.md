@@ -42,23 +42,23 @@ cd VR_Assignment1_NupurPatil_IMT2022520
 - Apply **Gaussian Blur** to remove noise.  
 - Display intermediate outputs.  
 
-#### ** Step 2: Thresholding**  
+####  Step 2: Thresholding 
 - Use **Adaptive Gaussian Thresholding** to highlight coins.  
 
-#### ** Step 3: Contour Detection**  
+####  Step 3: Contour Detection 
 - Extract contours from the thresholded image.  
 
-#### ** Step 4: Filtering & Drawing Coins**  
+####  Step 4: Filtering & Drawing Coins  
 - Filter coins based on **area and circularity** constraints.  
 - Draw circles around valid coins.  
 
-#### ** Step 5: Segmentation**  
+####  Step 5: Segmentation  
 - Apply **region-based segmentation** using contour bounding boxes.  
 - Create a mask to remove the background.  
 
 ---
 
-### **6. Results & Observations**  
+### 6. Results & Observations  
 - The algorithm successfully detects coins in the image and segments them individually.  
 - **Intermediate results** (grayscale, blurred, thresholded, detected, and segmented images) are displayed.  
 - The total number of detected coins is printed.  
