@@ -155,7 +155,7 @@ cd VR_Assignment1_NupurPatil_IMT2022520
 #### **Sample Outputs**  
 | **Image 1** | **Image 2** | **Image 3** | **Stitched Panorama** |  
 |------------|------------|------------|----------------|  
-| ![Img1](panorama_stitching/output_images/keypoints_p1.png) | ![Img2](panorama_stitching/output_images/keypoints_p2.png) | ![Img3](panorama_stitching/output_images/keypoints_p3.png) | ![Panorama](panorama_stitching/output_images/panorama.png) |  
+| ![Img1](panaroma_stitching/output_images/keypoints_p1.png) | ![Img2](panaroma_stitching/output_images/keypoints_p2.png) | ![Img3](panaroma_stitching/output_images/keypoints_p3.png) | ![Panorama](panaroma_stitching/output_images/panaroma.png) |  
 
 ---
 
@@ -181,3 +181,41 @@ cd VR_Assignment1_NupurPatil_IMT2022520
 - **Homography transformation with RANSAC for precise alignment.**  
 
 ---
+### **8. Repository Structure**  
+```
+VR_Assignment1_NupurPatil_IMT2022520/
+│── coin_detection_and_segmentation/
+│   ├── VR_ass1_coin.ipynb
+│   ├── input_images/
+│   │   ├── coins.jpg
+│   ├── output_images/
+│   │   ├── blurred_image.png
+│   │   ├── detected_coin_border_image.png
+│   │   ├── grayscale_image.png
+│   │   ├── original_image.png
+│   │   ├── thresholded_image.png
+│   │   ├── segmented_coin1.png
+│   │   ├── segmented_coin2.png
+│   │   ├── segmented_coin3.png
+│   │   ├── segmented_coin4.png
+│   │   ├── segmented_coin5.png
+│   │   ├── segmented_coin6.png
+│   │   ├── segmented_coin7.png
+│   │   ├── thresholded_image.png
+│── panorama_stitching/
+│   ├── VR_ass1_panorama.ipynb
+│   ├── input_images/
+│   │   ├── p1.jpeg
+│   │   ├── p2.jpeg
+│   │   ├── p3.jpeg
+│   ├── output_images/
+│   │   ├── keypoints_p1.png
+│   │   ├── keypoints_p2.png
+│   │   ├── keypoints_p3.png
+│   │   ├── panorama.png
+│── README.md
+```
+
+---
+
+
