@@ -66,7 +66,7 @@ cd VR_Assignment1_NupurPatil_IMT2022520
 📌 **Example Output (Visualization)**  
 | **Original Image** | **Thresholded Image** | **Detected Coins** |  
 |-----------------|-----------------|-----------------|  
-| ![Original](png) | ![Thresholded](outputs/thresholded.jpg) | ![Detected](outputs/detected.jpg) |  
+| ![Original](coin_detection_and_segmentation/output_images/original_image.png) | ![Thresholded](coin_detection_and_segmentation/output_images/thresholded_image.png) | ![Detected](coin_detection_and_segmentation/output_images/detected_coin_border_image.png) |  
 
 📌 **Segmented Coins:**  
 ![Segmented](outputs/segmented.jpg)  
