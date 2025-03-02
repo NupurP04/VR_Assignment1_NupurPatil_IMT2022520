@@ -133,7 +133,7 @@ cd VR_Assignment1_NupurPatil_IMT2022520
 #### **Sample Outputs**  
 | **Image 1** | **Image 2** | **Image 3** | **Stitched Panorama** |  
 |------------|------------|------------|----------------|  
-| ![Img1](panorama_stitching/output_images/keypoints_p1.png) | ![Img2](panorama_stitching/output_images/keypoints_p2.png) | ![Img3](panorama_stitching/output_images/keypoints_p3.png) | ![Panorama](panorama_stitching/output_images/panorama.png) |  
+| ![Img1](panaroma_stitching/output_images/keypoints_p1.png) | ![Img2](panaroma_stitching/output_images/keypoints_p2.png) | ![Img3](panaroma_stitching/output_images/keypoints_p3.png) | ![Panorama](panaroma_stitching/output_images/panaroma.png) |  
 
 ---
 
