@@ -30,29 +30,29 @@ git clone https://github.com/NupurP04/VR_Assignment1_NupurPatil_IMT2022520.git
 cd VR_Assignment1_NupurPatil_IMT2022520
 ```
 
-2. Place the image file inside the repository folder.  
+2. Inside the input_image directory, coins.jpg is the input_image used in the script, copy the path accordingly.  
 
 3️. Go to the coin_detection_and_segmentation folder - execute the cells in VR_ass1_coin.ipynb. 
 
 ---
 
 ### **5. Methodology**  
-#### **🔹 Step 1: Image Preprocessing**  
+#### ** Step 1: Image Preprocessing**  
 - Convert the image to grayscale.  
 - Apply **Gaussian Blur** to remove noise.  
 - Display intermediate outputs.  
 
-#### **🔹 Step 2: Thresholding**  
+#### ** Step 2: Thresholding**  
 - Use **Adaptive Gaussian Thresholding** to highlight coins.  
 
-#### **🔹 Step 3: Contour Detection**  
+#### ** Step 3: Contour Detection**  
 - Extract contours from the thresholded image.  
 
-#### **🔹 Step 4: Filtering & Drawing Coins**  
+#### ** Step 4: Filtering & Drawing Coins**  
 - Filter coins based on **area and circularity** constraints.  
 - Draw circles around valid coins.  
 
-#### **🔹 Step 5: Segmentation**  
+#### ** Step 5: Segmentation**  
 - Apply **region-based segmentation** using contour bounding boxes.  
 - Create a mask to remove the background.  
 
@@ -66,7 +66,7 @@ cd VR_Assignment1_NupurPatil_IMT2022520
 📌 **Example Output (Visualization)**  
 | **Original Image** | **Thresholded Image** | **Detected Coins** |  
 |-----------------|-----------------|-----------------|  
-| ![Original](outputs/original.jpg) | ![Thresholded](outputs/thresholded.jpg) | ![Detected](outputs/detected.jpg) |  
+| ![Original](png) | ![Thresholded](outputs/thresholded.jpg) | ![Detected](outputs/detected.jpg) |  
 
 📌 **Segmented Coins:**  
 ![Segmented](outputs/segmented.jpg)  
@@ -75,10 +75,10 @@ cd VR_Assignment1_NupurPatil_IMT2022520
 
 ### **7. Repository Structure**  
 ```
-VR_Assignment1_[YourName]_[YourRollNo]/
-│── coin_detection.py          # Main Python script  
-│── README.md                  # Project documentation  
-│── /images                    # Folder containing input images  
-│── /outputs                   # Folder containing result images  
+VR_Assignment1_NupurPatil_IMT2022520/
+│── coin_detection_and_segmentation          # Folder containing input 
+│── README.md                                # Project documentation  
+│── /images                                  # Folder containing input images  
+│── /outputs                                 # Folder containing result images  
 ```
 
